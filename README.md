@@ -453,11 +453,9 @@ MIT License - see [LICENSE](LICENSE) file for details.
 - **KaibanJS** - Multi-agent coordination framework
 - **Docusaurus** - Documentation platform integration
 
-## Support
+## Demo
 
-- **Issues**: [GitHub Issues](https://github.com/mischegoss/ragasaurus/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/mischegoss/ragasaurus/discussions)
-- **Email**: [Contact maintainers](mailto:your-email@example.com)
+- **Demo Page**: [Demo](https://agent100-463901.web.app/demo)
 
 ---
 
