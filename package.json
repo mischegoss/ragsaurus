@@ -45,6 +45,7 @@
     "kaibanjs": "^0.21.1"
   },
   "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
     "@types/node": "^20.19.2",
     "typescript": "^5.8.3"
   },
