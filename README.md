@@ -4,7 +4,6 @@
 
 Transform your documentation with intelligent AI agents that analyze, enhance, and optimize content for better search and retrieval.
 
-[![npm version](https://badge.fury.io/js/ragasaurus.svg)](https://www.npmjs.com/package/ragasaurus)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## What is Ragasaurus?
