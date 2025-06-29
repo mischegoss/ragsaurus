@@ -1,0 +1,29 @@
+{
+  "name": "ragasaurus",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mischegoss/ragsaurus.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mischegoss/ragsaurus/issues"
+  },
+  "homepage": "https://github.com/mischegoss/ragsaurus#readme",
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "@tavily/core": "^0.5.7",
+    "@octokit/rest": "^22.0.0",
+    "fs-extra": "^11.3.0",
+    "gray-matter": "^4.0.3",
+    "kaibanjs": "^0.21.1",
+    "dotenv": "^16.6.0"
+  }
+}
