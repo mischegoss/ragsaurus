@@ -8,65 +8,65 @@ import * as fs from 'fs-extra'
  */
 export interface RAGPluginOptions {
   /** Enable/disable the plugin */
-  enabled?: boolean;
+  enabled?: boolean
   /** Enable verbose logging */
-  verbose?: boolean;
+  verbose?: boolean
   /** Path to documentation directory */
-  docsPath?: string;
+  docsPath?: string
   /** Skip interactive prompt in development */
-  skipPrompt?: boolean;
+  skipPrompt?: boolean
   /** Agent configuration */
   agents?: {
-    seo?: boolean,
-    topology?: boolean,
-    chunking?: boolean,
-    research?: boolean,
-  };
+    seo?: boolean
+    topology?: boolean
+    chunking?: boolean
+    research?: boolean
+  }
   /** GitHub integration options */
   github?: {
-    createPR?: boolean,
-    owner?: string,
-    repo?: string,
-    token?: string,
-  };
+    createPR?: boolean
+    owner?: string
+    repo?: string
+    token?: string
+  }
   /** Maximum number of agents to run */
-  maxAgents?: number;
+  maxAgents?: number
   /** Target directory for enhanced docs */
-  outputPath?: string;
+  outputPath?: string
 }
 
 /**
  * Environment validation result
  */
 interface EnvValidationResult {
-  isValid: boolean;
-  missing: string[];
-  present: string[];
-  config: EnvironmentConfig;
+  isValid: boolean
+  missing: string[]
+  present: string[]
+  config: EnvironmentConfig
 }
 
 /**
  * Environment configuration
  */
 interface EnvironmentConfig {
-  googleApiKey?: string;
-  tavilyApiKey?: string;
-  skipPrompt: boolean;
-  nodeEnv: string;
-  isDevelopment: boolean;
-  isProduction: boolean;
+  googleApiKey?: string
+  tavilyApiKey?: string
+  skipPrompt: boolean
+  nodeEnv: string
+  isDevelopment: boolean
+  isProduction: boolean
 }
 
 /**
  * Processing result from RAG workflow
  */
 interface ProcessingResult {
-  filesProcessed: number;
-  enhancementsApplied: number;
-  ragScore: number;
-  processingTime: number;
-  agentResults: any[];
-  summary: any;
+  filesProcessed: number
+  enhancementsApplied: number
+  ragScore: number
+  processingTime: number
+  agentResults: any[]
+  summary: any
 }
 
 /**

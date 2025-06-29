@@ -1,29 +1,61 @@
 {
   "name": "ragasaurus",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "AI-powered RAG documentation enhancement plugin for Docusaurus",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "prepublishOnly": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mischegoss/ragsaurus.git"
+    "url": "git+https://github.com/mischegoss/ragasaurus.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "docusaurus",
+    "rag",
+    "documentation",
+    "ai",
+    "plugin",
+    "enhancement",
+    "search",
+    "semantic"
+  ],
+  "author": "Tamar Auber",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mischegoss/ragsaurus/issues"
+    "url": "https://github.com/mischegoss/ragasaurus/issues"
   },
-  "homepage": "https://github.com/mischegoss/ragsaurus#readme",
+  "homepage": "https://github.com/mischegoss/ragasaurus#readme",
   "dependencies": {
     "@google/generative-ai": "^0.24.1",
-    "@tavily/core": "^0.5.7",
     "@octokit/rest": "^22.0.0",
+    "@tavily/core": "^0.5.7",
+    "dotenv": "^16.6.0",
     "fs-extra": "^11.3.0",
     "gray-matter": "^4.0.3",
-    "kaibanjs": "^0.21.1",
-    "dotenv": "^16.6.0"
+    "kaibanjs": "^0.21.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.2",
+    "typescript": "^5.8.3"
+  },
+  "peerDependencies": {
+    "@docusaurus/core": "^3.0.0"
+  },
+  "overrides": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   }
 }
